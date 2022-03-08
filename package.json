@@ -1,0 +1,26 @@
+{
+  "name": "@ignite/app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nedanwr/ignite.git"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "pos",
+    "postgres",
+    "prisma"
+  ],
+  "author": "Naveed Ali Anwar <hello@naveedalianwar.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nedanwr/ignite/issues"
+  },
+  "homepage": "https://github.com/nedanwr/ignite#readme"
+}
