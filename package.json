@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prepare": "husky install",
-    "format": "prettier --write \"**/*.{ts,tsx}\""
+    "format": "prettier --config .prettierrc --write \"**/*.{ts,tsx}\""
   },
   "repository": {
     "type": "git",
