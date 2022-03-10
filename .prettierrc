@@ -6,5 +6,7 @@
   "tabWidth": 4,
   "useTabs": false,
   "arrowParens": "always",
-  "parser": "typescript"
+  "parser": "typescript",
+  "bracketSpacing": true,
+  "bracketSameLine": false
 }
