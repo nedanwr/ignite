@@ -5,10 +5,12 @@ export interface LabelProps {
     title: string;
 }
 
-export const Label: FC<LabelProps> = ({ className, title, ...props }) => {
+const Label: FC<LabelProps> = ({ className, title, ...props }) => {
     return (
         <label className={className} {...props}>
             {title}
         </label>
     );
 };
+
+export default Label;

@@ -14,7 +14,7 @@ export type ButtonProps = DetailedHTMLProps<
     variant: "default";
 };
 
-export const Button: FC<ButtonProps> = ({
+const Button: FC<ButtonProps> = ({
     children,
     disabled,
     loading,
@@ -31,5 +31,7 @@ export const Button: FC<ButtonProps> = ({
         >
             <span className={`text-center`}>{children}</span>
         </button>
-    )
-}
+    );
+};
+
+export default Button;

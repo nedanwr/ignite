@@ -7,7 +7,7 @@ export interface InputProps extends ComponentPropsWithoutRef<"input"> {
     transparent?: boolean;
 }
 
-export const Input = forwardRef<HTMLInputElement, InputProps>(
+const Input = forwardRef<HTMLInputElement, InputProps>(
     ({ className, textarea, error, transparent, ...props }, ref) => {
         return textarea ? (
             <textarea
@@ -28,3 +28,5 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
 );
 
 Input.displayName = "Input";
+
+export default Input;
