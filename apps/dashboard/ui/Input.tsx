@@ -21,6 +21,10 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
                 ref={ref}
                 className={className}
                 data-testid="input"
+                spellCheck={false}
+                autoCapitalize={`off`}
+                autoComplete={`off`}
+                autoCorrect={`off`}
                 {...props}
             />
         );
