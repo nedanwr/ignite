@@ -13,14 +13,18 @@ export const LoginPage: NextPage = () => {
             <Head>
                 <title>Login — Ignite</title>
             </Head>
-            <div className={`flex bg-gray-100 text-black h-screen w-screen m-auto justify-center align-middle self-center items-center`}>
+            <div
+                className={`flex bg-gray-100 text-black h-screen w-screen m-auto justify-center align-middle self-center items-center`}
+            >
                 <form
                     autoComplete={`off`}
                     spellCheck={`false`}
                     noValidate={true}
                     className={`bg-white shadow-md rounded-md px-20 py-12 m-auto`}
                 >
-                    <h1 className={`font-bold text-2xl mb-6 text-gray-800`}>Sign in to your account</h1>
+                    <h1 className={`font-bold text-2xl mb-6 text-gray-800`}>
+                        Sign in to your account
+                    </h1>
                     <div className={`form-group flex flex-col`}>
                         <Label
                             title={`Email or Username`}
@@ -34,7 +38,9 @@ export const LoginPage: NextPage = () => {
                             className={`form-control`}
                             placeholder={`Enter your email or username`}
                             value={emailUsername}
-                            onChange={(e:ChangeEvent<HTMLInputElement>) => setEmailUsername(e.target.value)}
+                            onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                                setEmailUsername(e.target.value)
+                            }
                             required
                         />
                     </div>
@@ -44,7 +50,11 @@ export const LoginPage: NextPage = () => {
                                 title={`Password`}
                                 className={`font-medium text-sm mb-1.5`}
                             />
-                            <p className={`text-sm font-medium text-blue-600 cursor-pointer`}>Forgot your password?</p>
+                            <p
+                                className={`text-sm font-medium text-blue-600 cursor-pointer`}
+                            >
+                                Forgot your password?
+                            </p>
                         </div>
                         <Input
                             type={`password`}
@@ -54,10 +64,14 @@ export const LoginPage: NextPage = () => {
                             className={`form-control`}
                             placeholder={`Enter your password`}
                             value={password}
-                            onChange={(e:ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
+                            onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                                setPassword(e.target.value)
+                            }
                             required
                         />
-                        <Button variant={`default`} className={`px-44`}>Continue</Button>
+                        <Button variant={`default`} className={`px-44`}>
+                            Continue
+                        </Button>
                     </div>
                 </form>
             </div>
