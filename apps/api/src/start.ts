@@ -11,6 +11,10 @@ if (!__prod__) {
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.get("/", (_req:Request, res:Response) => res.status(200).json({ message: "Welcome to Ignite API"}))
+app.get("/", (_req: Request, res: Response) =>
+    res.status(200).json({ message: "Welcome to Ignite API" })
+);
 
-app.listen(port, () => console.log(`Server started in ${env} mode on port ${port}`));
+app.listen(port, () =>
+    console.log(`Server started in ${env} mode on port ${port}`)
+);
