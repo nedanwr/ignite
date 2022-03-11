@@ -19,13 +19,15 @@ const Button: FC<ButtonProps> = ({
     disabled,
     loading,
     icon,
+    variant,
     className,
     ...props
 }) => {
     return (
         <button
             disabled={disabled || loading}
-            className={`bg-blue-500 text-white py-3.5 rounded w-full mt-4 font-medium hover:bg-blue-700 duration-300 ease-linear ${className}`}
+            className={variant === "default" ? `bg-blue-500 text-white py-3.5 rounded w-full mt-4 font-medium hover:bg-blue-700 duration-300 ease-linear ${className}` : "btn btn-primary"}
+            {...props}
             data-testid="button"
             {...props}
         >
